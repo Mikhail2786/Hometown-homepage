@@ -1,0 +1,135 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+* {
+box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+#hero-section {
+    background-image: url("images/ldn.jpg");
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 60px 100px
+}
+
+
+h1, h2 {
+   border-radius: 10px;  
+}
+
+#hero-h1 {
+    background: #4d6881;
+    margin: 0 auto 10px auto;
+    padding: 5px 20px;
+}
+
+#hero-h1:hover {
+    background: #71b48d;
+}
+
+#hero-h2 {
+    font-size: 18px;
+    background: #404e7c;
+    margin-top: 0;
+    padding: 5px 20px;
+}
+
+#hero-h2:hover {
+    background: #5E9380;
+}
+
+img {
+    width: 100px;
+    height: 100px
+}
+
+img:hover {
+   animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  50% {transform: rotate(360deg);}
+}
+
+#activity-section {
+    background: #A8DADC;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding: 10px 0px 20px 0px; 
+}
+
+#activity-heading {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    justify-content: center;
+}
+
+.activity-items {
+    display: flex;
+    flex-direction: column;
+    flex: 0 0 30%;
+    align-items: center;
+    width: 20px;
+    padding: 10px 0px 0px 0px;
+}
+
+.activity-image {
+    border-radius: 50%;
+}
+
+.sub-header{
+    margin-bottom: 0px
+}
+
+#guide-section {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background: #71b48d;
+    color: #2b2839;
+    box-shadow: 5px 10px #5E9380;
+    border-radius: 10px;   
+}
+
+#guide-section:hover {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;    
+    text-align: center;
+    background: #4d6881;
+    color: #fff;
+    box-shadow: 5px 10px #404e7c;
+    border-radius: 10px;   
+}
+
+#my-info p {
+    margin:0 8px 0 0;
+    font-style: italic
+}
+
+#my-avatar{
+    width: 150px;
+    height: 200px;
+    border-radius: 10px;
+}
